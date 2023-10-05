@@ -186,3 +186,23 @@ master에서 node로 접속하기 위해서 키를 하나 등록해 보겠따.
 ssh-keygen
 ssh-copy-id root@172.17.0.5
 #### Jenkins Node 추가하기 다시하기
+
+
+### 1005 회사
+루트 권한 docker 접속
+- docker exec -itu 0 {container_id} /bin/bash
+
+JDK 17 설치 방법 1 : jenkins_1 컨테이너에 접속해서 설치
+docker exec -it jenkins_1 bash
+apt-get update
+apt-get install openjdk-17-jdk -y
+
+
+mlocate 설치 및 검색
+apt-get install mlocate
+updatedb
+locate java | fgrep 17 | fgrep javac
+find : /usr/lib/jvm/java-17-openjdk-amd64ㄷ
+
+
+http://localhost:8088/demo/add?name=jinho&number=1232
