@@ -78,6 +78,8 @@ docker run --rm -p 9000:9000 --name sonar
 qube sonarqube
 - --rm 컨테이너가 실행을 왈료한 후 삭제를 한다.
 
+- ![Alt text](image-12.png)
+
 ### 실습14) SonarQube + Maven 프로젝트 사용하기
 
 Maven 프로젝트를 실제 소나큐브에서 분석하기 위해서는 plugin이 필요하다
@@ -96,6 +98,7 @@ Maven 프로젝트를 실제 소나큐브에서 분석하기 위해서는 plugin
 - My Account -> Security -> User Token 생성
 - ![Alt text](image-3.png)
 - squ_16557c64aa2f7e04586ca58a312c5095b9060c43
+- gradle은 : squ_6b39996d56c42d6a750c29c6221aa19b7b6b87ff
     - secret text이다.
 - mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=squ_16557c64aa2f7e04586ca58a312c5095b9060c43
 
@@ -206,3 +209,4 @@ find : /usr/lib/jvm/java-17-openjdk-amd64ㄷ
 
 
 http://localhost:8088/demo/add?name=jinho&number=1232
+
